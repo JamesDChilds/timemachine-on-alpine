@@ -31,9 +31,9 @@ cp /etc/afp.conf /etc/afp.conf.bak
 echo "[Global]
 
 [TimeMachine]
-path = /timemachine
+path = /backups/timemachine
 time machine = yes
-valid users = username @${user}
+valid users = @timemachine
 " > /etc/afp.conf
 
 /etc/init.d/dbus start
